@@ -135,7 +135,7 @@
                     android:orientation="vertical">
 
 
-                    <RelativeLayout
+                 <RelativeLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center">
@@ -549,24 +549,239 @@
                         android:id="@+id/llCharges"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-
-
-
-
                         app:cardCornerRadius="3dp"
                         app:cardElevation="3dp"
                         app:cardUseCompatPadding="true">
 
                         <LinearLayout
-
-
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="right"
-
                             android:gravity="right"
                             android:orientation="vertical"
                             android:padding="6dp">
+                            <LinearLayout
+                                android:id="@+id/lyt_total"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/exo_2"
+                                    android:gravity="center_vertical"
+                                    android:text="Total Amount "
+                                    android:textSize="14dp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_vertical"
+                                    android:fontFamily="@font/exo_2"
+
+                                    android:gravity="center_vertical"
+                                    android:text=":  "
+
+
+                                    android:textColor="@color/colorAccent"
+
+                                    android:textSize="14dp" />
+
+                                <TextView
+                                    android:id="@+id/text_Total"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="0.5"
+                                    android:fontFamily="@font/exo_2"
+                                    android:gravity="center_vertical"
+                                    android:text="---------"
+                                    android:textColor="#03A9F4"
+                                    android:textSize="16dp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/lyt_dis"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/exo_2"
+                                    android:gravity="center_vertical"
+                                    android:text="Discount Amount "
+                                    android:textSize="14dp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_vertical"
+                                    android:fontFamily="@font/exo_2"
+
+                                    android:gravity="center_vertical"
+                                    android:text=":  "
+
+
+                                    android:textColor="@color/colorAccent"
+
+                                    android:textSize="14dp" />
+
+                                <TextView
+                                    android:id="@+id/text_discount"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="0.5"
+                                    android:fontFamily="@font/exo_2"
+                                    android:gravity="center_vertical"
+                                    android:text="---------"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="14dp" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:visibility="gone"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/exo_2"
+                                    android:gravity="center_vertical"
+                                    android:text="Wallet Discount"
+                                    android:textSize="14dp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_vertical"
+                                    android:fontFamily="@font/exo_2"
+
+                                    android:gravity="center_vertical"
+                                    android:text=":  "
+
+
+                                    android:textColor="@color/colorAccent"
+
+                                    android:textSize="14dp" />
+
+                                <TextView
+                                    android:id="@+id/text_wallet"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="0.5"
+                                    android:fontFamily="@font/exo_2"
+                                    android:gravity="center_vertical"
+                                    android:text="---------"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="14dp" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/lyt_gst"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/exo_2"
+                                    android:gravity="center_vertical"
+                                    android:text="GST Amount "
+                                    android:textSize="14dp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_vertical"
+                                    android:fontFamily="@font/exo_2"
+
+                                    android:gravity="center_vertical"
+                                    android:text=":  "
+
+
+                                    android:textColor="@color/colorAccent"
+
+                                    android:textSize="14dp" />
+
+                                <TextView
+                                    android:id="@+id/text_Gst"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="0.5"
+                                    android:fontFamily="@font/exo_2"
+                                    android:gravity="center_vertical"
+                                    android:text="---------"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="14dp" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/lyt_billing"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/exo_2"
+                                    android:gravity="center_vertical"
+                                    android:text="Billing Amount "
+                                    android:textSize="14dp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_vertical"
+                                    android:fontFamily="@font/exo_2"
+
+                                    android:gravity="center_vertical"
+                                    android:text=":  "
+
+
+                                    android:textColor="@color/colorAccent"
+
+                                    android:textSize="14dp" />
+
+                                <TextView
+                                    android:id="@+id/text_billing"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_weight="0.5"
+                                    android:fontFamily="@font/exo_2"
+                                    android:gravity="center_vertical"
+                                    android:text="---------"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="14dp" />
+                            </LinearLayout>
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -576,9 +791,9 @@
                                 android:layout_marginRight="6dp"
                                 android:fontFamily="@font/exo_2"
                                 android:gravity="center_vertical"
+                                android:visibility="gone"
+
                                 android:paddingLeft="2dp"
-
-
                                 android:text="Total Charges"
                                 android:textColor="@color/black"
                                 android:textSize="11dp" />
@@ -588,14 +803,13 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_vertical"
-
                                 android:layout_marginRight="6dp"
 
-                                android:fontFamily="@font/exo_2"
+                               android:fontFamily="@font/exo_2"
                                 android:gravity="center_vertical"
                                 android:padding="6dp"
                                 android:text="₹ 0"
-
+                                android:visibility="gone"
                                 android:textColor="#03A9F4"
                                 android:textSize="16dp"
                                 android:textStyle="bold" />

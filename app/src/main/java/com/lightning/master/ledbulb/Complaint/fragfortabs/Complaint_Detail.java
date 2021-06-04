@@ -79,7 +79,8 @@ public class Complaint_Detail extends AppCompatActivity {
 
     TextView total, tv_proceed, tv_bookingStatus, tv_bookingId, tv_bookingDate, invoice,
             tv_bookingTransportedBy, tv_bookingAddress, tv_description, tv_bookingTime,
-            tv_opt_textvalue, tv_DistributerContact, tv_GiveFeedbback, tv_numbrOfImages;
+            tv_opt_textvalue, tv_DistributerContact, tv_GiveFeedbback, tv_numbrOfImages,
+            text_discount,text_wallet,text_billing,text_Gst,text_Total;
     ImageView iv_back, bookingImagenew, tv_tracking;
     RadioGroup radioGroup1;
     RadioButton btn_repaire, btn_non_repair;
@@ -89,6 +90,7 @@ public class Complaint_Detail extends AppCompatActivity {
     Dialog dialog_progress, dialog_summary;
     JSONObject invoiceData;
     JSONObject payment;
+    LinearLayout lyt_billing,lyt_gst,lyt_dis,lyt_total;
 
     public static Dialog dialog_invoice;
 
@@ -178,6 +180,12 @@ public class Complaint_Detail extends AppCompatActivity {
         tv_bookingTime = (TextView) findViewById(R.id.tv_bookingTime);
         tv_GiveFeedbback = (TextView) findViewById(R.id.tv_GiveFeedbback);
         tv_numbrOfImages = (TextView) findViewById(R.id.tv_numbrOfImages);
+        text_discount = (TextView) findViewById(R.id.text_discount);
+        text_wallet = (TextView) findViewById(R.id.text_wallet);
+        text_billing = (TextView) findViewById(R.id.text_billing);
+        text_Gst = (TextView) findViewById(R.id.text_Gst);
+        text_Total = (TextView) findViewById(R.id.text_Total);
+
 
         recycler_grid_price = (RecyclerView) findViewById(R.id.recycler_grid_price);
         recyclerViewnon = (RecyclerView) findViewById(R.id.recyclerViewnon);
@@ -191,6 +199,11 @@ public class Complaint_Detail extends AppCompatActivity {
         ll_otp_layout = (LinearLayout) findViewById(R.id.ll_otp_layout);
         ll_moreImages = (LinearLayout) findViewById(R.id.ll_moreImages);
         ll_detailsScroll = (LinearLayout) findViewById(R.id.ll_detailsScroll);
+        lyt_billing = (LinearLayout) findViewById(R.id.lyt_billing);
+        lyt_gst = (LinearLayout) findViewById(R.id.lyt_gst);
+        lyt_dis = (LinearLayout) findViewById(R.id.lyt_dis);
+        lyt_total = (LinearLayout) findViewById(R.id.lyt_total);
+
 
         nestedScrollview = (ScrollView) findViewById(R.id.nestedScrollview);
 
@@ -677,7 +690,8 @@ public class Complaint_Detail extends AppCompatActivity {
                                     itemDataList.add(modelPriceList);
                                 }
 
-                                total.setText("₹ "+sum);
+
+
                                 setup_cart_items();
                             }
 
@@ -719,10 +733,34 @@ public class Complaint_Detail extends AppCompatActivity {
                                 tv_numbrOfImages.setText("");
                             }
                             if (!dataObject.isNull("invoicedata")) {
-
                                 invoiceData = dataObject.getJSONObject("invoicedata");
+                                String total_amount = invoiceData.getString("total_amount");
+                                String gst_amount = invoiceData.getString("gst_amount");
+                                String billing_amount = invoiceData.getString("billing_amount");
+                                String wallet_discount = invoiceData.getString("wallet_discount");
+                                String discount_amount = invoiceData.getString("discount_amount");
+                                text_discount.setText("₹ "+discount_amount);
+                                text_wallet.setText("₹ "+wallet_discount);
+                                text_billing.setText("₹ "+billing_amount);
+                                text_Gst.setText("₹ "+gst_amount);
+                                text_Total.setText("₹ "+total_amount);
+                                if (total_amount.equalsIgnoreCase("0")){
+                                    lyt_billing.setVisibility(View.GONE);
+                                    lyt_dis.setVisibility(View.GONE);
+                                    lyt_gst.setVisibility(View.GONE);
+                                    lyt_total.setVisibility(View.GONE);
+                                    total.setVisibility(View.VISIBLE);
+                                    total.setText("Billing amount not calculated yet");
+                                }else{
+                                    lyt_billing.setVisibility(View.VISIBLE);
+                                    lyt_dis.setVisibility(View.VISIBLE);
+                                    lyt_gst.setVisibility(View.VISIBLE);
+                                    lyt_total.setVisibility(View.VISIBLE);
 
-//                               Show_invoice(invoiceData);
+                                }
+
+
+
                             }
                             if (!dataObject.isNull("paymentdata")) {
                                 payment = dataObject.getJSONObject("paymentdata");
