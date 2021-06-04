@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="Profile" />
+        <item
+            android:id="@+id/complaints"
+            android:icon="@drawable/previous_complaint"
+            android:title="Previous complaint " />
+        <item
+            android:id="@+id/setting"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Change Password" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/beforelogout"
+            android:title="Logout" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/menu_share" />
+            <item
+                android:visible="false"
+                android:id="@+id/nav_feedback"
+                android:icon="@drawable/ic_menu_share"
+                android:title="FeedBack" />
+
+            <item
+                android:visible="false"
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/menu_send" />
+        </menu>
+    </item>
+
+
+    <item android:title="Connect With Us Via">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_Facebook"
+                    android:icon="@drawable/ic_fb_icon"
+                    android:title="Facebook" />
+                <item
+                    android:id="@+id/nav_Instagram"
+                    android:icon="@drawable/instagram_icon"
+                    android:title="Instagram" />
+
+                <item
+                    android:id="@+id/nav_Twitter"
+                    android:icon="@drawable/twitter_icon"
+                    android:title="Twitter" />
+                <item
+                    android:id="@+id/nav_LinkedIn"
+                    android:icon="@drawable/linkedin_icon"
+                    android:title="LinkedIn" />
+                <item
+                    android:id="@+id/nav_YouTube"
+                    android:icon="@drawable/youtube_icon"
+                    android:title="YouTube" />
+                <item
+                    android:id="@+id/nav_Pinterest"
+                    android:icon="@drawable/pinterest_icon"
+                    android:title="Pinterest" />
+
+            </group>
+
+        </menu>
+    </item>
+
+</menu>

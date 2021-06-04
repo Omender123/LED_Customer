@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bggg">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent2" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="The Lighting Masters"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+
+                app:fontFamily="@font/audiowide" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_title2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+                android:layout_gravity="center"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Zoro Lightning"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:typeface="monospace"
+                app:fontFamily="@font/audiowide" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/circle_tech"
+                        android:padding="12dp"
+                        android:src="@drawable/technical"
+                        android:tint="@color/white" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+
+
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="8dp"
+                        android:text="Technology Oriented"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+
+                        android:typeface="monospace"
+                        app:fontFamily="@font/exo_2" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/circle_customer"
+                        android:padding="12dp"
+                        android:src="@drawable/customer"
+                        android:tint="@color/white" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+
+
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="8dp"
+                        android:text="Customer Services"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+
+                        android:typeface="monospace"
+                        app:fontFamily="@font/exo_2" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/circle_expert"
+                        android:padding="12dp"
+                        android:src="@drawable/experts"
+                        android:tint="@color/white" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+
+
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="8dp"
+                        android:text="Experrts in lightning solution"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+
+                        android:typeface="monospace"
+                        app:fontFamily="@font/exo_2" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/circle_design"
+                        android:padding="12dp"
+                        android:src="@drawable/design"
+                        android:tint="@color/white" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+
+
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="8dp"
+                        android:text="Design Driven"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+
+                        android:typeface="monospace"
+                        app:fontFamily="@font/exo_2" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/circle_leader"
+                        android:padding="12dp"
+                        android:src="@drawable/green_energy"
+                        android:tint="@color/white" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+
+
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="8dp"
+                        android:text="Lighting Focused for green building"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+
+                        android:typeface="monospace"
+                        app:fontFamily="@font/exo_2" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/circle_manufacture"
+                        android:padding="12dp"
+                        android:src="@drawable/manufacturing"
+                        android:tint="@color/white" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+
+
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="8dp"
+                        android:text="Manufacturing Excelence"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+
+                        android:typeface="monospace"
+                        app:fontFamily="@font/exo_2" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginTop="40dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/et_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Mobile"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:background="@drawable/btn_shape_white"
+                    android:textColorHint="#F1EDED"
+                    android:textColor="@color/white"
+                    android:inputType="phone"
+                    android:maxLength="10"/>
+
+                <Button
+                    android:id="@+id/tv_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/transparent"
+                    android:drawableRight="@drawable/ic_chevron_right_black_24dp"
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="Next"
+                    android:textColor="@color/transparent"
+                    android:textSize="16dp"
+                    android:typeface="monospace"
+                    app:fontFamily="@font/audiowide" />
+
+            </LinearLayout>
+           </ScrollView>
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/btn_shape_white"
+                android:drawableRight="@drawable/ic_chevron_right_black_24dp"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:text="Register"
+                android:textColor="@color/white"
+                android:textSize="13dp"
+                android:typeface="monospace"
+                app:fontFamily="@font/audiowide" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

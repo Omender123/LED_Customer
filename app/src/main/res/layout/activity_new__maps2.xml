@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".New_MapsActivity2">
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Select Your Drop Point"
+        android:textColor="@color/black"
+        android:id="@+id/tv_texttitle"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:textSize="18dp"/>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_setLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:weightSum="2">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="40dp"
+            android:text=" Your Selected Drop Point"
+            android:id="@+id/text_drop"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentBottom="true"
+            android:padding="5dp"
+            android:gravity="center_vertical|center"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp"
+            android:background="@color/white"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="40dp"
+            android:text="Proceed"
+            android:background="@color/colorPrimaryDark"
+            android:id="@+id/set_drop_point"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/text_drop"
+            android:layout_marginRight="10dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/ll_cardData"
+        android:layout_marginBottom="5dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iv_imageElectri"
+                    android:layout_width="50dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/imageloading"
+                    android:layout_height="50dp" />
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="30dp"
+                    android:layout_centerInParent="true"
+                    android:layout_height="30dp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_ElectricianName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/exo_2"
+                    android:text="Name :"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/tv_PhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/exo_2"
+                    android:gravity="start"
+                    android:autoLink="phone"
+                    android:text="xxxxxxxx"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_assign"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Select"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"/>
+
+    </LinearLayout>
+</RelativeLayout>

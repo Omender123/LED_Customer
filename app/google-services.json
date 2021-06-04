@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "911041910362",
+    "firebase_url": "https://ledbulbcustomer.firebaseio.com",
+    "project_id": "ledbulbcustomer",
+    "storage_bucket": "ledbulbcustomer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:911041910362:android:656f3024a731f73f",
+        "android_client_info": {
+          "package_name": "com.lightning.master.ledbulb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "911041910362-23gc3e9el0l5sd5f11l8oe3p1f7ri3h3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lightning.master.ledbulb",
+            "certificate_hash": "6d1e0e75e944bc4ce5687e82f339752b207518b2"
+          }
+        },
+        {
+          "client_id": "911041910362-c21e9tmbhpl3cdo46nbainp3bckdomot.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUpTOSjXzHcxr2jkNiDxhrU9wWvdErB4A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "911041910362-c21e9tmbhpl3cdo46nbainp3bckdomot.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">The Lighting Masters</string>
+    <string name="default_notification_channel_id">default</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_contact">Contact Us</string>
+    <string name="title_about">About Us</string>
+    <string name="next">NEXT</string>
+    <string name="start">GOT IT</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_new__maps2">Map</string>
+    <string name="title_activity_home__drawer">Home_Drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="AboutData">Established in the year 2009, we, “Omega Pune” are engaged in manufacturing of a wide assortment of
+CFL Bulb,
+CFL Tube,
+Round Flat Panel,
+Square Flat Panel,
+Flat Panel,
+Sunflower Down Light,
+Square Down Light Range,
+Glacier Down Light,
+LED Street Light,
+Sunflower Down Light.
+The complete range of products is manufactured using optimum grade raw material which is sourced from the trusted vendors of the industry and is offered in the market leading prices</string>
+</resources>

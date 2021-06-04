@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context="com.lightning.master.ledbulb.Splash">
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+
+
+        android:src="@drawable/logo_gif" />
+
+    <LinearLayout
+        android:id="@+id/company_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="-- Developed By --"
+            android:textColor="#fff"
+            android:visibility="invisible"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:gravity="center_horizontal"
+            android:padding="2dp"
+            android:visibility="invisible"
+
+            android:text="Bespoke Digital Media (IN) Pvt.Ltd."
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>

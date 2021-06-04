@@ -1,0 +1,76 @@
+apply plugin: 'com.android.application'
+
+
+android {
+    compileSdkVersion 30
+    defaultConfig {
+        applicationId "com.lightning.master.ledbulb"
+        minSdkVersion 19
+        targetSdkVersion 30
+        versionCode 5
+        versionName "1.0.4"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildFeatures {
+        dataBinding = true
+        viewBinding = true
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //noinspection GradleCompatible
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.firebase:firebase-analytics:18.0.3'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test:runner:1.3.0'
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'com.jaredrummler:material-spinner:1.2.5'
+    implementation 'com.journeyapps:zxing-android-embedded:3.4.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+
+    implementation 'com.nbsp:materialfilepicker:1.9.1'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.afollestad.material-dialogs:core:0.9.4.5'
+    implementation 'com.github.GoodieBag:Pinview:v1.3'
+    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+
+
+    configurations.all {
+        exclude group: 'com.android.support', module: 'support-v13'
+    }
+    implementation 'com.google.android.gms:play-services-maps:17.0.1'
+    implementation 'com.google.android.gms:play-services-location:18.0.0'
+    implementation 'com.google.android.libraries.places:places:2.4.0'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.8.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.1'
+    implementation 'com.google.firebase:firebase-messaging:21.1.0'
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+
+    implementation 'com.github.sujithkanna:smileyrating:1.6.8'
+}
+apply plugin: 'com.google.gms.google-services'

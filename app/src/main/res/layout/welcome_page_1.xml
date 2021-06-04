@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="472dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="4dp"
+                android:text="Pick Up &amp; Drop service"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#f7c600"
+                android:textSize="@dimen/slide_title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="4dp"
+                android:gravity="center"
+                android:paddingLeft="@dimen/desc_padding"
+                android:paddingRight="@dimen/desc_padding"
+                android:text="Easy to register and choose Pickup Or Drop point service."
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/slide_desc" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/pick" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lightning.master.ledbulb.Complaint.fragfortabs.Tracking">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_back_tracking"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="6dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_arrow_back_black_24dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Track Product"
+            android:textSize="22dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:fontFamily="@font/exo_2"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+        <ImageView
+
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo"/>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="52dp"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Complaint Id:"
+            android:textSize="16dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="6dp"
+            android:layout_gravity="center_vertical"
+
+            android:fontFamily="@font/exo_2"
+
+          />
+
+
+            <TextView
+                android:id="@+id/complaintid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="12224232"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="6dp"
+                android:layout_gravity="center_vertical"
+
+                android:fontFamily="@font/exo_2"
+
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:background="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status:"
+                android:textSize="17dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="6dp"
+                android:layout_gravity="center_vertical"
+
+                android:fontFamily="@font/exo_2"
+
+                />
+
+
+            <TextView
+                android:id="@+id/Status_track"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Product Picked"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="@color/colorAccent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="6dp"
+                android:layout_gravity="center_vertical"
+
+                android:fontFamily="@font/exo_2"
+
+                />
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            app:cardElevation="3dp"
+            app:cardCornerRadius="3dp"
+
+            android:backgroundTint="#f1f1f1"
+
+
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+
+            <ImageView
+                android:id="@+id/book_image"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/not_track"/>
+                    <View
+                        android:id="@+id/book_view"
+                        android:layout_width="2dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:background="@color/dark_grey"/>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/booking_recieve"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Booking Recieved"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"
+
+                    android:fontFamily="@font/exo_2"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:id="@+id/drop_image"
+                        android:layout_height="15dp"
+                        android:background="@drawable/not_track"/>
+
+
+                    <View
+                        android:layout_width="2dp"
+                        android:id="@+id/drop_view"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:background="@color/dark_grey"/>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_booking_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Drop / Pick Up"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/exo_2"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:id="@+id/picked_image"
+                        android:layout_height="15dp"
+                        android:background="@drawable/not_track"/>
+
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/picked_view"
+                        android:layout_gravity="center"
+                        android:background="@color/dark_grey"/>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_pickeup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Picked Up"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/exo_2"
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:id="@+id/reach_image"
+                        android:background="@drawable/not_track"/>
+
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/reach_view"
+                        android:layout_gravity="center"
+                        android:background="@color/dark_grey"/>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Reached at Hub"
+                    android:id="@+id/tv_reachathub"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/exo_2"
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:id="@+id/quality_image"
+                        android:layout_height="15dp"
+                        android:background="@drawable/not_track"/>
+
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/picked_quality"
+                        android:layout_gravity="center"
+                        android:background="@color/dark_grey"/>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="At Quality Check"
+                    android:textSize="15dp"
+                    android:id="@+id/tv_qulitycheck"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/exo_2"
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:id="@+id/service_image"
+                        android:layout_height="15dp"
+                        android:background="@drawable/not_track"/>
+
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/service_view"
+                        android:layout_gravity="center"
+                        android:background="@color/dark_grey"/>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Service Completed"
+                    android:textSize="15dp"
+                    android:id="@+id/tv_sevicecomplete"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/exo_2"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:id="@+id/assigne_for_deliver"
+                        android:layout_height="15dp"
+                        android:background="@drawable/not_track"/>
+
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/assign_deliver_line"
+                        android:layout_gravity="center"
+                        android:background="@color/dark_grey"/>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Assigned For Delivered"
+                    android:textSize="15dp"
+                    android:id="@+id/assign_for_delivered"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/exo_2"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:id="@+id/out_for_deliver"
+                        android:layout_height="15dp"
+                        android:background="@drawable/not_track"/>
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/out_for_deliver_line"
+                        android:layout_gravity="center"
+                        android:background="@color/dark_grey"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Out For Delivered"
+                    android:textSize="15dp"
+                    android:id="@+id/Out_for_delivered"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/exo_2"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:id="@+id/deliver_image"
+                        android:layout_height="15dp"
+                        android:background="@drawable/not_track"/>
+
+                   <!-- <View
+                        android:layout_width="2dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:background="@color/colorAccent"/>
+-->
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Delivered"
+                    android:textSize="15dp"
+                    android:id="@+id/tv_deliver"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/exo_2"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

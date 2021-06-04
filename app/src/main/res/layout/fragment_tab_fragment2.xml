@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="2dp"
+            android:fontFamily="@font/exo_2"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:text="Tap to View Detail"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <include
+                layout="@layout/item_comaplinlist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_yes_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView_complainLIst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:paddingTop="3dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_Noresult"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <include layout="@layout/layout_custom_norslt" />
+    </LinearLayout>
+</LinearLayout>

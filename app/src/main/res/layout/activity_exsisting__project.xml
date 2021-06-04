@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark"
+        tools:ignore="MissingConstraints"></View>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_back_existing"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="6dp"
+                android:src="@drawable/ic_arrow_back_black_24dp" />
+
+            <TextView
+                android:id="@+id/toolname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/exo_2"
+                android:text="Existing Project"
+                android:textColor="@color/black"
+                android:textSize="22dp" />
+
+            <ImageView
+
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:src="@drawable/logo" />
+        </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="55dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+
+
+                app:cardCornerRadius="3dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="@font/exo_2"
+                        android:text="Area Type"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/area_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/boxx"
+                        android:fontFamily="@font/exo_2"
+                        android:hint="Industry"
+                        android:lines="1"
+                        android:padding="4dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+
+                        android:textColor="@color/black" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/exo_2"
+                            android:text="Area Dimensions (L/W/H)"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/hint_existing"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginRight="15dp"
+
+                            android:drawableLeft="@drawable/hint"
+                            android:fontFamily="@font/exo_2"
+                            android:text="  HINT"
+
+                            android:textColor="#009688"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_hint_existing"
+                        android:layout_width="match_parent"
+                        android:visibility="gone"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="200dp"
+                            android:layout_height="150dp"
+
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"
+                            android:src="@drawable/dimen" />
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/et_lenth"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/boxx"
+                            android:fontFamily="@font/exo_2"
+                            android:gravity="center"
+                            android:hint="L"
+                            android:inputType="number"
+                            android:lines="1"
+
+                            android:padding="4dp"
+                            android:textColor="@color/black" />
+
+                        <EditText
+                            android:id="@+id/et_width"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/boxx"
+                            android:fontFamily="@font/exo_2"
+
+                            android:gravity="center"
+                            android:hint="W"
+                            android:inputType="number"
+                            android:lines="1"
+
+                            android:padding="4dp"
+                            android:textColor="@color/black" />
+
+                        <EditText
+                            android:id="@+id/et_Height"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/boxx"
+                            android:fontFamily="@font/exo_2"
+
+                            android:gravity="center"
+                            android:hint="H"
+                            android:inputType="number"
+                            android:lines="1"
+
+
+                            android:padding="4dp"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginRight="15dp"
+                            android:fontFamily="@font/exo_2"
+                            android:text="Follow Measurement "
+                            android:textSize="16sp" />
+
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginRight="18dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/dimen" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginLeft="15dp"
+
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/exo_2"
+
+                            android:text="lux (lx)"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/et_Lux"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/boxx"
+                            android:fontFamily="@font/exo_2"
+                            android:hint="Total No. of lux required"
+                            android:inputType="number"
+                            android:lines="1"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="8dp"
+
+                            android:paddingBottom="8dp"
+                            android:textColor="@color/black" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ll_numOf_led"
+                        android:visibility="visible"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/exo_2"
+                            android:text="Current No. of LED "
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                        <EditText
+                            android:id="@+id/number_led"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+
+                            android:layout_marginTop="6dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/boxx"
+                            android:fontFamily="@font/exo_2"
+
+
+                            android:hint="Type here!"
+
+                            android:inputType="number"
+                            android:lines="1"
+                            android:padding="6dp"
+
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/tv_add"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="10dp"
+                        android:drawableLeft="@drawable/plus"
+                        android:drawablePadding="3dp"
+                        android:fontFamily="@font/exo_2"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:text=" Address"
+
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/et_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="10dp"
+
+                        android:background="@drawable/boxx"
+                        android:fontFamily="@font/exo_2"
+                        android:hint="Type here!"
+                        android:lines="3"
+
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:textColor="@color/black"
+
+                        android:visibility="gone" />
+                    <TextView
+                        android:id="@+id/tv_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="10dp"
+                        android:drawableLeft="@drawable/plus"
+                        android:fontFamily="@font/exo_2"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:text="  Description"
+
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/et_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/boxx"
+                        android:fontFamily="@font/exo_2"
+                        android:hint="Type here!"
+                        android:lines="4"
+                        android:maxLength="400"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:textColor="@color/black"
+
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_add_imageex"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="10dp"
+                        android:drawableLeft="@drawable/plus"
+                        android:fontFamily="@font/exo_2"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:text="  Add Project File"
+
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_add_file"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:id="@+id/add_project_file_before"
+                            android:layout_width="70dp"
+                            android:visibility="gone"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:src="@drawable/after" />
+
+                        <ImageView
+                            android:id="@+id/add_project_file_after"
+                            android:layout_width="70dp"
+                            android:visibility="gone"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="10dp"
+                            android:src="@drawable/before" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </ScrollView>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_procced_existing"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:text="Proceed"
+        android:background="@drawable/btn_shapes_capsule"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_alignParentBottom="true"
+        android:textSize="18dp"
+        android:layout_marginLeft="35dp"
+
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="10dp"
+
+
+
+
+        android:fontFamily="@font/exo_2"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+
+
+</RelativeLayout>

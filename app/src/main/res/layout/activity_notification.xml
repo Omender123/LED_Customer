@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingTop="5dp"
+            android:gravity="center_vertical"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/poppins"
+
+                android:text="Notifications "
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_weight="1"
+                android:textStyle="bold"/>
+            <ImageView
+                android:id="@+id/close_notification"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="6dp"
+                android:tint="@color/black"
+                android:src="@drawable/close_black_24dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/recycle_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:orientation="vertical">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView_notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ll_noresult"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="5dp">
+
+            <!--  <pl.droidsonroids.gif.GifImageView
+                  android:layout_width="match_parent"
+                  android:layout_height="160dp"
+                  android:padding="5dp"
+                  android:src="@drawable/noresult" />-->
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Oops No Notifications List here :("
+                android:textColor="#494949"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Your Notification will be shown here."
+                android:textColor="#B4B4B4"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_clear_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/clear_nptification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_gravity="center_horizontal|bottom"
+            android:padding="10dp"
+            android:text="clear All Notification"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+</RelativeLayout>

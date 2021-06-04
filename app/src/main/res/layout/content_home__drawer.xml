@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".HomeMain.Home_Drawer"
+        tools:showIn="@layout/app_bar_home__drawer">
+
+
+       <View
+            android:id="@+id/topView"
+           android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:background="@color/colorPrimaryDark" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/logout"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_margin="8dp"
+                android:tint="@color/black"
+                android:src="@drawable/beforelogout" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:fontFamily="@font/exo_2"
+                android:gravity="center"
+                android:text="The Lighting Masters"
+                android:textColor="@color/black"
+                android:textSize="22dp" />
+            <ImageView
+                android:id="@+id/iv_notification"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/ic_notification"
+                android:tint="@color/black" />
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/topView"
+            android:layout_above="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:layout_marginTop="1dp">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/view_pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp" />
+
+                    <LinearLayout
+                        android:id="@+id/layoutDots"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="6dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"></LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        app:cardElevation="6dp"
+                        app:cardCornerRadius="6dp"
+                        app:cardUseCompatPadding="true"
+                        android:layout_marginRight="10dp">
+
+                        <LinearLayout
+                            android:id="@+id/ll_service"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:orientation="vertical"
+                            android:padding="12dp">
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/service"
+                                android:tint="@color/colorAccent" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="36dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@color/colorPrimaryDark"
+                                android:fontFamily="@font/exo_2"
+                                android:gravity="center"
+
+                                android:text="Lighting Services"
+
+                                android:textColor="@color/black"
+
+                                android:textSize="18dp" />
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        app:cardElevation="6dp"
+                        app:cardCornerRadius="6dp"
+                        app:cardUseCompatPadding="true"
+                        android:layout_marginRight="10dp">
+
+                        <LinearLayout
+                            android:id="@+id/ll_project"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+
+                            android:orientation="vertical"
+                            android:padding="12dp">
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/projects"
+                                android:tint="@color/colorAccent" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="36dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@color/colorPrimaryDark"
+                                android:fontFamily="@font/exo_2"
+
+                                android:gravity="center"
+
+                                android:text=" Lighting Projects"
+                                android:textColor="@color/black"
+                                android:textSize="18dp" />
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </ScrollView>
+
+
+        </LinearLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:background="?android:attr/windowBackground"
+            android:backgroundTint="@color/black"
+            app:labelVisibilityMode="labeled"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:menu="@menu/navigation" />
+
+    </RelativeLayout>
+

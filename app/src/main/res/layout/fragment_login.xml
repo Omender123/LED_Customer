@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+
+            android:layout_alignParentBottom="true"
+
+            android:layout_marginTop="30dp"
+            android:src="@drawable/log" />
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_above="@+id/cv"
+        android:layout_marginBottom="10dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:textColor="@color/colorPrimaryDark"
+
+        android:fontFamily="@font/exo_2"
+
+        android:layout_marginTop="20dp"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+
+        android:backgroundTint="@color/colorPrimaryDark">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="100dp"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:background="@color/white"
+                android:layout_marginTop="8dp"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:textColorHint="@color/black"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_loginUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/black"
+                android:fontFamily="@font/exo_2"
+                android:textColorHint="@color/black"
+                android:hint="Username" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:textColorHint="@color/black"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/black"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/black"
+                    android:fontFamily="@font/exo_2"
+                    android:maxLines="1"
+                    android:inputType="textPassword"
+                    android:id="@+id/et_loginPassword"
+                    android:textColorHint="@color/black"
+                    android:hint="Password" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:layout_marginTop="10dp"
+                android:text="Login"
+                android:textColor="@color/black"
+                android:fontFamily="@font/exo_2"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/colorAccent"
+                android:background="@drawable/btn_shapes_capsule"/>
+
+
+            <TextView
+                android:id="@+id/tv_sign_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forgot Password"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/exo_2"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
